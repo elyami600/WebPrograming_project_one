@@ -1,0 +1,2 @@
+-Your CSS styling is mobile-first
+-Have a Pull Request in the github repo history (beyond the pull request you use to submit)
