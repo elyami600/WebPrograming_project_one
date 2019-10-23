@@ -12,8 +12,10 @@
     <div class="main-nav">
         <nav>
             <ul class="nav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">about</a></li>
+                <li class="nav-left"><a href="about.html">about</a></li>
+                <li class="nav-left"><a href="index.html">Store</a></li>
+                <li class="nav-right"><a href="index.html">Gmail</a></li>
+                <li class="nav-right"><a href="about.html">Images</a></li>
 
             </ul>
         </nav>
@@ -22,14 +24,7 @@
     <div class="main-body">
 
         <div class="main-title">
-            <h1 id="grading-element-five">
-                <span style="color:cornflowerblue">D</span>
-                <span style="color:red ">O</span>
-                <span style="color:yellow ">O</span>
-                <span style="color: cornflowerblue">G</span>
-                <span style="color:green ">L</span>
-                <span style="color: red">E</span>
-            </h1>
+            <h1  id="grading-element-five">DOOOOOGLE</h1>
         </div>
 
 
@@ -41,6 +36,7 @@
             <input class="inputHide" value="value" name="testTwo"  type="text" required>
 
             <input class="inputHide" value="value" name="TestThree" type="text" required>
+
             <input type="submit"/>
          </form>
 
@@ -48,7 +44,7 @@
 
         <br>
 
-        <div id="grading-element-three-consequence" hidden >
+        <div id="grading-element-three-consequence"  >
 
             Today will be amazing day
 
@@ -76,14 +72,14 @@
         });
 
         function Onvisible() {
-            //document.getElementById("grading-element-three").innerText = " today will be a wondaful day
-            let x = document.getElementById("grading-element-three-consequence");
 
-            if (x.hasAttribute('hidden')) {
-                x.removeAttribute('hidden');
+            let x = document.getElementById("grading-element-three-consequence");
+            if (x.style.visibility === 'hidden') {
+                x.style.visibility = 'visible';
             } else {
-                x.setAttribute('hidden', '');
+                x.style.visibility = 'hidden';
             }
+
         }
 
     </script>
